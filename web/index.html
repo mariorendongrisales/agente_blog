@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generador de Blogs con IA</h1>
+        </header>
+        <form id="blog-form">
+            <label for="topic">Tema o Título:</label>
+            <input type="text" id="topic" name="topic" placeholder="Escribe el tema o título..." required>
+            
+            <label for="tone">Tono de Voz:</label>
+            <select id="tone" name="tone" required>
+                <option value="Creativo">Creativo</option>
+                <option value="Casual">Casual</option>
+                <option value="Formal">Formal</option>
+            </select>
+            
+            <label for="language">Idioma:</label>
+            <select id="language" name="language" required>
+                <option value="Español">Español</option>
+                <option value="Inglés">Inglés</option>
+            </select>
+            
+            <button type="submit">Generar Artículo</button>
+        </form>
+        
+        <div id="result-container">
+            <h2>Artículo Generado:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
